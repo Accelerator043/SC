@@ -1,0 +1,27 @@
+---
+title: "Help"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Help}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(StatComp21037)
+```
+
+The first function cv takes three arguments: df, a data frame with a default of prostate cancer measurements; k, an integer determining the number of crossvalidation folds, with a default of 5; and seed, an integer to be passed to set.seed() before defining the folds, with a default of NULL (meaning no seed shall be set). 
+
+This function splits up the given data df into k folds of roughly equal size, and using these folds, compute the cross-validation error of the linear model that is given by the formula.str with a default of regressing lpsa on lcavol and lweight. Its output is the cross-validation error under the given linear regression model. 
+
+The feature of this function is that the linear model is also an input choice. That makes this cv function much more flexible and useful in different cases. 
+
+The second function ce takes two arguments: xdata, a dataframe with 2 cols and alpha. This function helps draw a confidence ellipse of binary normal distribution data. 

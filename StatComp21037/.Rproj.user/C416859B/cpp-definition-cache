@@ -1,0 +1,17 @@
+[
+    {
+        "file": "C:/Users/41516/Desktop/StatComp21037/StatComp21037/src/Rcpp.cpp",
+        "file_last_write": 1640065534.0,
+        "definitions": [
+            {
+                "usr": "c:@F@gibbsC#I#I#I#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "gibbsC(int, int, int, int, int)",
+                "file": "C:/Users/41516/Desktop/StatComp21037/StatComp21037/src/Rcpp.cpp",
+                "line": 18,
+                "column": 15
+            }
+        ]
+    }
+]
